@@ -84,10 +84,6 @@ int main(void)
   CMU_ClockEnable(cmuClock_GPIO, true);
   CMU_ClockEnable(cmuClock_TIMER0, true);
 
-  // Initialize the LEDs on the board
-  BSP_LedsInit();
-
-
   USTIMER_Init();
   TIMER_Init_TypeDef init = TIMER_INIT_DEFAULT;
 
