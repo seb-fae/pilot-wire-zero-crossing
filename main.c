@@ -121,31 +121,27 @@ int main(void)
 	  {
 		  case HORSGEL:
 		  case ARRET:
-		  set_arret_horsgel(m);
+		    set_arret_horsgel(m);
 		  break;
 		  case ECO:
-		  /* Always 1 */
-		  timer0->CC[2].CCV = 2;
-		  timer0->TOP = 1;
-		  timer0->CNT = 0;
+		    timer0->CC[2].CCV = 2;
+		    timer0->TOP = 1;
+		    timer0->CNT = 0;
 		  break;
 		  case CONFORT:
-		  /* Always 0 */
-		  timer0->CNT = 0;
-		  timer0->CC[2].CCV = 0;
-		  timer0->TOP = 1;
+		    timer0->CNT = 0;
+		    timer0->CC[2].CCV = 0;
+		    timer0->TOP = 1;
 		  break;
 		  case CONFORT1:
-		  /* Always 0 */
-		  timer0->CC[2].CCV = 24;
-		  timer0->TOP = 28;
-		  timer0->CNT = 0;
-			 break;
+		    timer0->CC[2].CCV = 24;
+		    timer0->TOP = 28;
+		    timer0->CNT = 0;
+		 break;
 		  case CONFORT2:
-		  /* Always 0 */
-		  timer0->CC[2].CCV = 12;
-		  timer0->TOP = 14;
-		  timer0->CNT = 0;
+		    timer0->CC[2].CCV = 12;
+		    timer0->TOP = 14;
+		    timer0->CNT = 0;
 		  break;
 	  }
   }
